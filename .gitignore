@@ -11,6 +11,7 @@ target/
 .settings
 .springBeans
 *.jpage
+*.exe
 
 ### IntelliJ IDEA ###
 .idea
