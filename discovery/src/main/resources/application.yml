@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: Eureka
+server:
+  port: 8990
+eureka:
+  instance:
+    hostname: ${EUREKA_HOST_NAME:localhost}
+    preferIpAddress: ${EUREKA_PREFER_IP:false}
+    securePortEnabled: false
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8990/eureka}
